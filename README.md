@@ -1,1 +1,1 @@
-This is just a simple project for meteor and react.
+This is just a simple employee record app project for meteor and react.
