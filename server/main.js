@@ -7,6 +7,7 @@ Meteor.startup(() => {
 	// check if data exists in the collection
 	const numberRecords = Employees.find({}).count();
 
+	// if no data then generate data
 	if (!numberRecords) {
 		// generate some data
 		_.times(5000, () => {
@@ -18,4 +19,8 @@ Meteor.startup(() => {
 			});
 		});
 	}
+
+	Meteor.publish('employees', () => {
+		return Employees.find({}, { limit : 20 });
+	});
 });
