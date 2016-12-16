@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'mongodb-clients',
+1 verbose cli   'mongodb-server' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'mongodb-clients', null ]
+6 verbose cache add name=undefined spec="mongodb-clients" args=["mongodb-clients",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'mongodb-clients',
+7 verbose parsed url   path: 'mongodb-clients',
+7 verbose parsed url   href: 'mongodb-clients' }
+8 verbose cache add [ 'mongodb-server', null ]
+9 verbose cache add name=undefined spec="mongodb-server" args=["mongodb-server",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'mongodb-server',
+10 verbose parsed url   path: 'mongodb-server',
+10 verbose parsed url   href: 'mongodb-server' }
+11 silly lockFile e0977d3c-mongodb-clients mongodb-clients
+12 verbose lock mongodb-clients /home/rpregis/.npm/e0977d3c-mongodb-clients.lock
+13 silly lockFile a84e1157-mongodb-server mongodb-server
+14 verbose lock mongodb-server /home/rpregis/.npm/a84e1157-mongodb-server.lock
+15 silly lockFile e0977d3c-mongodb-clients mongodb-clients
+16 silly lockFile e0977d3c-mongodb-clients mongodb-clients
+17 silly lockFile a84e1157-mongodb-server mongodb-server
+18 silly lockFile a84e1157-mongodb-server mongodb-server
+19 verbose addNamed [ 'mongodb-clients', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile 42c5c54c-mongodb-clients mongodb-clients@
+22 verbose lock mongodb-clients@ /home/rpregis/.npm/42c5c54c-mongodb-clients.lock
+23 verbose addNamed [ 'mongodb-server', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile f9a38038-mongodb-server mongodb-server@
+26 verbose lock mongodb-server@ /home/rpregis/.npm/f9a38038-mongodb-server.lock
+27 silly addNameRange { name: 'mongodb-server', range: '*', hasData: false }
+28 silly addNameRange { name: 'mongodb-clients', range: '*', hasData: false }
+29 verbose url raw mongodb-server
+30 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb-server' ]
+31 verbose url resolved https://registry.npmjs.org/mongodb-server
+32 info trying registry request attempt 1 at 10:08:11
+33 http GET https://registry.npmjs.org/mongodb-server
+34 verbose url raw mongodb-clients
+35 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb-clients' ]
+36 verbose url resolved https://registry.npmjs.org/mongodb-clients
+37 info trying registry request attempt 1 at 10:08:11
+38 http GET https://registry.npmjs.org/mongodb-clients
+39 http 404 https://registry.npmjs.org/mongodb-clients
+40 silly registry.get cb [ 404,
+40 silly registry.get   { 'content-type': 'application/json',
+40 silly registry.get     'cache-control': 'max-age=0',
+40 silly registry.get     'content-length': '2',
+40 silly registry.get     'accept-ranges': 'bytes',
+40 silly registry.get     date: 'Fri, 16 Dec 2016 02:08:18 GMT',
+40 silly registry.get     via: '1.1 varnish',
+40 silly registry.get     connection: 'keep-alive',
+40 silly registry.get     'x-served-by': 'cache-sea1926-SEA',
+40 silly registry.get     'x-cache': 'MISS',
+40 silly registry.get     'x-cache-hits': '0',
+40 silly registry.get     'x-timer': 'S1481854098.834630,VS0,VE99',
+40 silly registry.get     vary: 'Accept-Encoding' } ]
+41 silly addNameRange number 2 { name: 'mongodb-clients', range: '*', hasData: true }
+42 silly addNameRange versions [ undefined, [] ]
+43 error TypeError: Cannot read property 'latest' of undefined
+43 error     at next (/usr/share/npm/lib/cache.js:687:35)
+43 error     at /usr/share/npm/lib/cache.js:675:5
+43 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:142:7)
+43 error     at /usr/lib/nodejs/graceful-fs/polyfills.js:133:7
+43 error     at Object.oncomplete (fs.js:107:15)
+44 error If you need help, you may report this log at:
+44 error     <http://github.com/isaacs/npm/issues>
+44 error or email it to:
+44 error     <npm-@googlegroups.com>
+45 error System Linux 3.16.0-64-generic
+46 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save" "mongodb-clients" "mongodb-server"
+47 error cwd /var/www/html/employee-record
+48 error node -v v0.10.25
+49 error npm -v 1.3.10
+50 error type non_object_property_load
+51 verbose exit [ 1, true ]
