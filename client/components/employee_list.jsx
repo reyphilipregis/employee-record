@@ -15,12 +15,12 @@ class EmployeeList extends Component {
 		super(props);
 	}
 
-	handleButtonClick () {
-		Meteor.subscribe('employees', (PER_PAGE * (this.page + 1)) );
+	handleButtonClick() {
+		Meteor.subscribe('employees', (PER_PAGE * (this.page + 1)));
 		this.page += 1;
 	}
 
-	render () {
+	render() {
 		const { employees } = this.props;
 
 		return (
@@ -35,7 +35,7 @@ class EmployeeList extends Component {
 					}
 				</div>
 
-				<button className="btn btn-primary" onClick = { this.handleButtonClick.bind(this) }>Load More...</button>
+				<button className = "btn btn-primary" onClick = { this.handleButtonClick.bind(this) }>Load More...</button>
 			</div>
 		);
 	}

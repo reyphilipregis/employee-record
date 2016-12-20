@@ -5,7 +5,7 @@ class EmployeeDetail extends Component {
 		super(props);
 	}
 
-	render () {
+	render() {
 		const { avatar, name, phone, email } = this.props.employee;
 
 		return (
