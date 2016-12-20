@@ -3,7 +3,7 @@ import { Meteor }    	  from 'meteor/meteor';
 import { Employees } 	  from '../imports/collections/employees';
 import { image, helpers } from 'faker';
 
-Meteor.startup(() => {
+Meteor.startup( () => {
 	// check if data exists in the collection
 	const numberRecords = Employees.find({}).count();
 
@@ -20,7 +20,6 @@ Meteor.startup(() => {
 		} );
 	}
 
-	Meteor.publish('employees', (per_page) => {
-		return Employees.find({}, { limit : per_page });
-	} );
+	// publish the limited employee records
+	Meteor.publish( 'employees', (per_page) => Employees.find({}, { limit : per_page }) );
 } );
