@@ -1,13 +1,15 @@
-import React 		from 'react';
-import ReactDOM 	from 'react-dom';
-import EmployeeList from './components/employee_list';
+import React, { Component } from 'react';
+import ReactDOM 			from 'react-dom';
+import EmployeeList 		from './components/employee_list';
 
-const App = () => {
-	return (
-		<div>
-			<EmployeeList />
-		</div>
-	);
+class App extends Component {
+	render() {
+		return (
+			<div>
+				<EmployeeList />
+			</div>
+		);
+	}
 };
 
 Meteor.startup(() => {
